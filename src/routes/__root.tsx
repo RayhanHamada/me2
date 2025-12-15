@@ -15,11 +15,6 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				rel: "shortcut icon",
-				href: avatarURL,
-				itemType: "image/x-icon",
-			},
-			{
 				title: "Mocchapine | Rayhan Hamada",
 			},
 			{
@@ -36,6 +31,10 @@ export const Route = createRootRoute({
 			{
 				rel: "stylesheet",
 				href: appCss,
+			},
+			{
+				rel: "icon",
+				href: avatarURL,
 			},
 		],
 	}),
