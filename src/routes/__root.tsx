@@ -1,13 +1,11 @@
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
-
-import Header from "../components/Header";
-
+import { avatarURL } from "@/lib/constants";
 import appCss from "../styles.css?url";
 
 export const Route = createRootRoute({
-	head: () => ({
+	head: async () => ({
 		meta: [
 			{
 				charSet: "utf-8",
@@ -17,7 +15,21 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "Rayhan Hamada's Personal Site",
+				rel: "shortcut icon",
+				href: avatarURL,
+				itemType: "image/x-icon",
+			},
+			{
+				title: "Mocchapine | Rayhan Hamada",
+			},
+			{
+				name: "title",
+				content: "Mocchapine | Rayhan Hamada",
+			},
+			{
+				name: "description",
+				content:
+					"Personal website of Muhammad Rayhan Hamada Budiman, aka Mocchapine. Full-stack developer, open-source enthusiast, and lifelong learner.",
 			},
 		],
 		links: [
@@ -38,8 +50,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 				<HeadContent />
 			</head>
 			<body>
-				<Header />
-				{children}
+				<main className="relative flex w-full flex-col text-white md:px-15">
+					{children}
+				</main>
 				<TanStackDevtools
 					config={{
 						position: "bottom-right",
