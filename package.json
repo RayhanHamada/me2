@@ -9,8 +9,9 @@
     "test": "vitest run",
     "format": "biome format --fix",
     "lint": "biome lint --fix",
-    "check": "biome check",
-    "deploy": "wrangler deploy"
+    "check": "ultracite check",
+    "deploy": "wrangler deploy",
+    "fix": "ultracite fix"
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.13.8",
@@ -37,8 +38,10 @@
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.4",
     "jsdom": "^27.0.0",
+    "oxfmt": "^0.51.0",
+    "oxlint": "^1.66.0",
     "typescript": "^6.0.3",
-    "ultracite": "6.4.0",
+    "ultracite": "7.7.0",
     "vite": "^7.1.7",
     "vitest": "^3.2.4",
     "web-vitals": "^5.1.0",
