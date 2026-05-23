@@ -15,16 +15,16 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "Mocchapine | Rayhan Hamada",
+				title: "Rayhan Hamada",
 			},
 			{
 				name: "title",
-				content: "Mocchapine | Rayhan Hamada",
+				content: "Rayhan Hamada",
 			},
 			{
 				name: "description",
 				content:
-					"Personal website of Muhammad Rayhan Hamada Budiman, aka Mocchapine. Full-stack developer, open-source enthusiast, and lifelong learner.",
+					"Personal website of Muhammad Rayhan Hamada Budiman. Full-stack developer, open-source enthusiast, and lifelong learner.",
 			},
 		],
 		links: [
