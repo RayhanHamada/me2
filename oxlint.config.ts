@@ -5,5 +5,5 @@ import remix from "ultracite/oxlint/remix";
 import vitest from "ultracite/oxlint/vitest";
 
 export default defineConfig({
-  extends: [core, react, remix, vitest],
+    extends: [core, react, remix, vitest],
 });
